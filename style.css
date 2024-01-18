@@ -1,69 +1,48 @@
-@import url('https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Comme & family= Inter:wght@500;800 & family= Libre+Baskerville:wght@ 700 & familia= Raleway:wght@500 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comme&family=Inter:wght@500;800&family=Libre+Baskerville:wght@700&family=Raleway:wght@500&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    min-width: 100%;
-    display: grid;
-    place-items: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    /*Para ocultar lo qeu sobra dde un componente*/
     background: #021c2c;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #070842, #051c2b);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #01023a, #031724);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: rgb(245, 245, 245);
-
+    /* font-family: 'Raleway', sans-serif; */
 }
 
-html {
-    height: 100%;
-    width: 100%;
+.container {
+    text-align: center;
 }
-h2{
-    margin-bottom: 0;
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: 20%;
+
+h2 {
+    margin: 20px 0;
+    color: rgb(180, 180, 200);
 }
+
 #reloj {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     border: 4px solid blue;
     background: #060713;
     color: rgb(180, 180, 200);
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: rgba(74, 74, 240, 0.2) 0px 7px 29px 0px;
 }
 
 @media (max-width: 768px) {
-    body {
-        justify-content: flex-start;
-        /* Alinea el contenido arriba en pantallas pequeñas */
-    }
-
     #reloj {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        border: 2px solid blue;
-            color: rgb(180, 180, 200);
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-shadow: rgba(74, 74, 240, 0.2) 0px 7px 29px 0px;
-        margin-left: 10%;
-        margin-top: 0;
+        height: 350px;
+        width: 350px;
+        font-size: 40px;
+        font-weight: 600;
     }
-
 }
